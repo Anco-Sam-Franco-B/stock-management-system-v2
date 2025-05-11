@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+   width: 100%;
+   height: 100vh; 
+   padding: 15px;
+   display: flex;
+   gap: 10px;
+   overflow: hidden;
+   background: #ebeef1;
+}
+.container .nav{
+    width: 20%;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 20px;
+}
+.container .nav h1{
+    text-align: center;
+    padding: 25px;
+    font-size: 19px;
+    color: dodgerblue;
+}
+button{
+    cursor: pointer;
+}
+.container .nav nav{
+    width: 100%;
+    padding: 25px;
+    font-size: 15px;
+}
+.container .nav nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.container .nav nav ul label{
+    color: #777;
+}
+
+.container .nav nav ul li{
+    display: flex;
+    width: 100%;
+    margin-left: 5px;
+}
+.container .nav nav ul li a{
+    padding: 10px 17px;
+    width: 100%;
+    border-radius: 30px;
+    text-decoration: none;
+    color: dodgerblue;
+}
+.container .nav nav ul li a:hover{
+    background: #ebeef1;
+}
+.container .nav nav ul li:nth-child(2) a{
+    background: dodgerblue;
+    color: #fff;
+}
+.container .nav nav ul li:nth-child(2) a:hover{
+    background: #ebeef1;
+    color: dodgerblue;
+}
+
+
+.container .contents{
+   width: 80%;
+   height: 100%;
+   padding: 0 20px;
+   overflow-y: auto;
+}
+.container .contents .form-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .contents .form-box .form{
+    width: 400px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 20px;
+}
+.container .contents .form-box .form h1{
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: dodgerblue;
+}
+.container .contents .form-box .form form{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.container .contents .form-box .form form input{
+    border: none;
+    outline: none;
+    padding: 11px 24px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    color: #333;
+}
+.container .contents .form-box .form form button{
+    padding: 11px 24px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: dodgerblue;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.container .contents .form{
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: #fff;
+}
+.container .contents .form h1{
+    color: dodgerblue;
+    font-size: 18px;
+    padding: 20px;
+}
+.container .contents .form form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.container .contents .form form label{
+    color: green;
+    font-size: 14px;
+}
+.container .contents .form form input{
+    padding: 10px 24px;
+    border: none;
+    outline: none;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.container .contents .form form button{
+    padding: 10px 24px;
+    border: none;
+    outline: none;
+    background: dodgerblue;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.container .contents .error{
+    background: white;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.container .contents .error h1{
+    font-size: 15px;
+    color: red;
+    text-align: center;
+    font-weight: 100;
+}
+.container .contents .table-header{
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 10px;
+    border-radius: 10px;
+    align-items: center;
+}
+.container .contents .table-header h1{
+    font-size: 13px;
+    color: green;
+}
+.container .contents .table-header a{
+    padding: 10px;
+    background: dodgerblue;
+    color: #fff;
+    font-size: 11px;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.container .contents .table{
+    width: 100%;
+    background: #fff;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.container .contents .table table{
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+.container .contents .table table th, td{
+    padding: 10px;
+}
+.container .contents .table table th{
+    background: dodgerblue;
+    color: white;
+    font-weight: 100;
+}
+.container .contents .table table tr:nth-child(odd){
+    background: #ebeef1;
+}
+.container .contents .table table tr td .delete{
+    text-decoration: none;
+    color: red;
+}
+.container .contents .table table tr td .edit{
+    text-decoration: none;
+    color: dodgerblue;
+}
+.container .contents .table table tr td .export{
+    text-decoration: none;
+    color: green;
+}
+.container .contents .table table tr .action{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
